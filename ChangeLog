@@ -1,0 +1,122 @@
+-------------------------------------------------------------------------
+-- ChangeLog
+-------------------------------------------------------------------------
+
+0.1.09 released 2004-07-11
+
+- Enhance javascript to support more browser, such as mozilla, NN, etc
+
+0.1.08 released 2004-07-08
+
+- Point home page to <http://tstool.sourceforge.net/>
+
+0.1.07 build 2004-07-03
+
+- Add "Change PID(s)" feature
+- Utilize getopt()
+- Add output of analysis summary
+- Fix some minor bugs
+
+0.1.01 build 2004-06-18
+
+- Move from Win32 (Visual C++ 6.0) GUI version 0.2.04 to CLI on Unix 
+  variants. The name is also changed from tsr (Transport Stream Reader) 
+  to tstool, indicating capability of manipulating rather then just 
+  reading transport streams
+- Utilize autoconf/automake build tools
+
+-------------------------------------------------------------------------
+-- ChangeLog of previous tsr (Win32 GUI version, w/o source code)
+-------------------------------------------------------------------------
+
+0.2.04 released 2003-12-19
+
+- Add parse of logical channel descriptor (LCN, 0x83), courtesy draft 
+  standard document from Charles Sevior (CSevior@nine.com.au)
+- Add parse of terrestrial_delivery_system_descriptor
+
+0.2.03 build 2003-11-05
+
+- Add feature of Extracting PIDs from TS
+- Make some minor UI modification
+
+0.2.02 build 2003-04.27
+
+- Show all PSI/SI packets (not include ES or NULL PIDs) in PIDs subtree
+
+0.2.01 build 2003-02-05
+
+- Update UI for "Save as HTML pages"
+
+0.2.0 release 2003-02-03
+
+- Add "Save as HTML pages" feature, support IE only
+
+2003-01-21
+
+- Rewrite parsing part to decouple from platform-specific UI API
+- Update AIT descriptors parsing
+
+2003-01-19
+
+- Fix bug for AIT section parsing
+- Start code clean up and consolidation for easy porting
+
+2003-01-13
+
+- Add initial AIT (MHP) parsing, courtesy sample streams from 
+  Mattias Bergstrom (mbergstrom@gist.de)
+
+2002-10-29
+
+- Handle ts file larger then 800M by only process the first 800M data
+- Add defrag function by deleting the broken packet at the head or tail
+  of ts file. If OpenTV header presents, it also gets removed by defrag.
+
+0.1.3 build 2002-06-09
+
+- Parse multiple sections in one packet
+- Fix an EIT section ts_id bug
+- Add local_time_offset descriptor
+
+2002-05-29
+
+- Add several DVB-SI descriptors parsing
+- Print OpenTV header info if applicable
+- Support TS file does not start at packet boundary
+- Popup information about the ts file before processing
+- Add convertion from 204 byte to 188 byte packets
+
+2002-05-19
+
+- Add UTC time to MJD time conversion
+- Add RST parsing
+- Add several DVB-SI descriptors parsing
+
+2002-05-18
+
+- Add hints when opening unrecognized files
+- Fix multiple section data bug(EIT/TOT/TDT...)
+- Add ASCII display to several descriptors
+- Add warranty disclaimer: No warranty at all
+
+0.1.2 build 2002-05-03
+
+- Parse content of all 13818-1 descriptors
+- Add ChangeLog
+
+0.1.1 build 2002-04-25
+
+- Fix HEX view problem (last line was not shown)
+- Add literal names of all PID/descriptors/stream_type/etc
+
+0.1 released 2002-04-22
+
+- Support both 204 and 188 byte packet size
+- Recognize OpenTV MUX file header
+- Support PAT/PMT/NIT/BAT/CAT/SDT/EIT/TOT/TDT
+- HEX view on particular packet/section (by dobule clicking the node)
+
+2002-03-27
+
+- Start initial CLI coding on SunOS 7

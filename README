@@ -1,0 +1,8 @@
+Welcome to tstool, which is a command line tool to analyze and manipulate DVB (Digital Video Broadcast) Transport Streams.
+
+This repository is an updated version of <http://tstool.sourceforge.net/>, where a more detailed description is available.
+
+To build, either:
+
+- `./configure && make` for Unix, or simply
+- `make -C make` for Linux platforms

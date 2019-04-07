@@ -1,0 +1,8 @@
+2015-06-05
+
+This is an alternative to autotools for building this simple project, i.e., using plain Makefiles, not considering too much of portability, as anyway it's only targeted/tested for Linux platform so far...
+
+
+TODO:
+
+- add more targets like "debug" and/or "gdb"

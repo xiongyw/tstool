@@ -1,0 +1,53 @@
+-------------------------------------------------------------------------
+-- TODO list
+
+Legend:
+
+- : not implemented
+* : partially implemented
++ : implemented
+-------------------------------------------------------------------------
+- parse DSM-CC object carousel and extract files, modules, etc
+
+- documentation: reference/guide/manual
+
+* add tree-view java script to support mozilla/netscape
+
+- read video/audio stream info such as bitrate, framerate, layer, aspect
+  ratio, sampling frequency, etc
+
+- extract ts/pes/es from an audio/video pid
+
++ change pids in the ts file
+
+- move some routines from libsi to si
+
++ refuse unrecognized files
+
++ private data indicator
+
++ print opentv track tag in ascii code
+
++ eit more sections
+
++ tdt/tot/rst has no last_section_number
+
++ decode utc time
+
++ cable-delievery, satellite-deleivery, bouquet-name
+
++ parse at least frequently used dvb-si descriptors: event, 
+  cable-delivery, etc.
+
++ support ts file not start/ends at packet boundary
+
++ print otv header info
+
++ 204to188
+
++ multiple table in one packet(e.g, tdt/tot, eit)
+
++ local_time_offset_descriptor
+
++ build platform independent tree
+
